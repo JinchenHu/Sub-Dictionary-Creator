@@ -1,18 +1,9 @@
 
-/**
-* 
-* Jinchen Hu ID#40080398
-* <p>COMP 249</p>
-* <p>Assignment #4 Part_1</p>
-* <p>Due 11:59 PM - Monday, April 8, 2019</p>
-*
-*/
-//-------------------------------
 //Assignment #4 Part_1
 //Question: write a program that will accept any text file, 
 //as input, and creates a sub-dictionary that includes all 
 //the words found in that input file based on some rules.
-//Written by: Jinchen Hu ID#40080398
+//Written by: Jinchen Hu 
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.PrintWriter;
@@ -61,7 +52,7 @@ public class SubDictionary {
 					//if the flag is true, capitalizes and add the String to list
 					if(flag) {
 						//remove 's 'S 'm 'M
-						s = s.replaceAll("’[m,M,s,S]", "");
+						s = s.replaceAll("â€™[m,M,s,S]", "");
 						//remove the punctuation
 						if(!Character.isLetter(s.charAt(s.length()-1))) 
 							s = s.substring(0, s.length()-1);
